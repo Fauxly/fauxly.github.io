@@ -22,13 +22,13 @@ function itemON(sourceURL, sourceName) {
                    document.getElementsByTagName ('head')[0].appendChild (script);
 			setTimeout(function() {
 			   Lampa.Settings.update();
-			   Lampa.Noty.show("Добавката " + sourceName + " е успешно инсталирана")
+			   Lampa.Noty.show("Дополнение " + sourceName + " е Успешно установлен")
 			}, 300);
 };
 --> */
 
 function itemON(sourceURL, sourceName, sourceAuthor, itemName) {
-if ($('DIV[data-name="' + itemName + '"]').find('.settings-param__status').hasClass('active')) {Lampa.Noty.show("Добавката вече е инсталирана!")} else {	
+if ($('DIV[data-name="' + itemName + '"]').find('.settings-param__status').hasClass('active')) {Lampa.Noty.show("Дополнение уже установлено!")} else {	
 	// Если перезагрузки не требуется - контроль после удаления плагинов
    if (!Lampa.Storage.get('needReboot')) {
 	// Получаем список плагинов
@@ -48,7 +48,7 @@ if ($('DIV[data-name="' + itemName + '"]').find('.settings-param__status').hasCl
 		document.getElementsByTagName ('head')[0].appendChild (script);
 		setTimeout(function() {
 			Lampa.Settings.update();
-			Lampa.Noty.show("Добавката " + sourceName + " е успешно инсталирана")
+			Lampa.Noty.show("Дополнение " + sourceName + " успешно установлен")
 		}, 300);
    } else {Lampa.Noty.show("ГРЕШКА: Преди инсталирането на добавката рестартирайте Lampa!")}
  };
