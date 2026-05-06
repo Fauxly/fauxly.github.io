@@ -1,11 +1,17 @@
-Либо более красивый вариант:
-
-```md id="q0gxdp"
 # 🦊 Fauxly Repo
 
-Modern repository for tvOS jailbreak packages.
+Repository for tvOS jailbreak packages and Apple TV applications.
 
-## 📦 Repository URL
-
-```text
+## Repository URL
 https://fauxly.github.io/
+
+## Available Packages
+- Spartan
+- tvOS Applications
+- Utilities
+- Tweaks
+
+## Supported
+- Apple TV
+- tvOS
+- PurePKG
