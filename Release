@@ -6,3 +6,4 @@ Codename: tvos
 Architectures: iphoneos-arm64
 Components: main
 Description: Apple TV jailbreak repository
+Icon: file://CydiaIcon.png
