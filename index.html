@@ -1,7 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauxly Repo</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #0b0b0f 0%, #16161d 100%);
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border-radius: 28px;
+            background: #1f1f28;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 54px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 18px;
+            opacity: 0.75;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 16px 32px;
+            background: #0A84FF;
+            color: white;
+            text-decoration: none;
+            border-radius: 18px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.2s ease;
+            box-shadow: 0 10px 25px rgba(10,132,255,0.35);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            opacity: 0.95;
+        }
+
+        .repo {
+            margin-top: 45px;
+            padding: 18px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.05);
+            word-break: break-all;
+            font-size: 15px;
+            opacity: 0.85;
+        }
+
+        .footer {
+            margin-top: 60px;
+            font-size: 14px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
 <body>
-  <h1>Hello there </h1>
-  <a href="https://t.me/fixsandtricks2">Visit Fixs & Tricks</a>
+
+    <div class="container">
+
+        <div class="logo">
+            🦊
+        </div>
+
+        <h1>Fauxly Repo</h1>
+
+        <p>
+            General repository for tvOS & iOS jailbreak packages.<br>
+            Compatible with PurePKG, Zebra and Installer.
+        </p>
+
+        <a class="button"
+           href="purepkg://addrepo?url=https://fauxly.github.io/SpartanRepo/">
+            Add to PurePKG
+        </a>
+
+        <div class="repo">
+            https://fauxly.github.io/SpartanRepo/
+        </div>
+
+        <div class="footer">
+            Hosted on GitHub Pages
+        </div>
+
+    </div>
+
 </body>
 </html>
