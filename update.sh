@@ -1,8 +1,15 @@
 #!/bin/bash
 
-echo "Updating tvOS repository..."
+echo "Cleaning old package indexes..."
 
-dpkg-scanpackages -m ./debs > Packages
+rm -f Packages
+rm -f Packages.gz
+
+echo "Scanning all DEB packages..."
+
+dpkg-scanpackages -m ./debs /dev/null > Packages
+
+echo "Compressing Packages..."
 
 gzip -kf Packages
 
@@ -14,7 +21,7 @@ Label: Fauxly Repo
 Suite: stable
 Version: 1.0
 Codename: tvos
-Architectures: darwin-arm64, appletvos-arm64
+Architectures: appletvos-arm64
 Components: main
 Description: Fauxly Apple TV Repository
 EOF
@@ -34,4 +41,4 @@ SHA256:
  $SHA256_GZ $SIZE_GZ Packages.gz
 EOF
 
-echo "Repository updated successfully."
+echo "Done. Repository updated."
