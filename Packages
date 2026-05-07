@@ -18,7 +18,7 @@ Version: 1.0.0-RC7-nightly-20240113105525
 Architecture: appletvos-arm64
 Maintainer: WhitetailAni <joemama@thanos.lol>
 Depends: firmware (>=13.0)
-Filename: ./debs/com.fauxly.spartan_1.0_appletvos-arm64.deb
+Filename: ./debs/com.whitetailani.spartan_1.0.0-RC7-nightly-20240113105525_appletvos-arm64.deb
 Size: 13628962
 MD5sum: 8cdb8d7ea303dca88153d0cb6d19c48a
 SHA1: e74775aa2f9a59c15dbba12dfe3d04f591770e34
