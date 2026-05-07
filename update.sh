@@ -16,19 +16,23 @@ echo "Compressing Packages..."
 gzip -kf Packages
 bzip2 -kf Packages
 
-echo "Calculating hashes..."
+echo "Calculating file sizes..."
+
+SIZE_PACKAGES=$(stat -f%z Packages)
+SIZE_GZ=$(stat -f%z Packages.gz)
+SIZE_BZ2=$(stat -f%z Packages.bz2)
+
+echo "Generating MD5 hashes..."
 
 MD5_PACKAGES=$(md5 -q Packages)
 MD5_GZ=$(md5 -q Packages.gz)
 MD5_BZ2=$(md5 -q Packages.bz2)
 
+echo "Generating SHA256 hashes..."
+
 SHA256_PACKAGES=$(shasum -a 256 Packages | awk '{ print $1 }')
 SHA256_GZ=$(shasum -a 256 Packages.gz | awk '{ print $1 }')
 SHA256_BZ2=$(shasum -a 256 Packages.bz2 | awk '{ print $1 }')
-
-SIZE_PACKAGES=$(stat -f%z Packages)
-SIZE_GZ=$(stat -f%z Packages.gz)
-SIZE_BZ2=$(stat -f%z Packages.bz2)
 
 echo "Creating Release file..."
 
