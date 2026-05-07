@@ -1,0 +1,55 @@
+name: Update tvOS Repository
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'debs/*.deb'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y dpkg-dev
+
+      - name: Make update.sh executable
+        run: chmod +x update.sh
+
+      - name: Run update.sh
+        run: ./update.sh
+
+      - name: Commit updated repo files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add Packages
+          git add Packages.gz
+          git add Release
+
+          git commit -m "Update repository metadata" || echo "No changes"
+
+          git push
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: repo-${{ github.run_number }}
+          name: Fauxly Repo Update ${{ github.run_number }}
+          files: |
+            Packages
+            Packages.gz
+            Release
+            debs/*.deb
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
