@@ -4,7 +4,6 @@ echo "Cleaning old repository files..."
 
 rm -f Packages
 rm -f Packages.gz
-rm -f Packages.bz2
 rm -f Release
 
 echo "Generating Packages..."
@@ -14,25 +13,26 @@ dpkg-scanpackages -m ./debs /dev/null > Packages
 echo "Compressing Packages..."
 
 gzip -kf Packages
-bzip2 -kf Packages
 
 echo "Calculating file sizes..."
 
 SIZE_PACKAGES=$(stat -f%z Packages)
 SIZE_GZ=$(stat -f%z Packages.gz)
-SIZE_BZ2=$(stat -f%z Packages.bz2)
 
 echo "Generating MD5 hashes..."
 
 MD5_PACKAGES=$(md5 -q Packages)
 MD5_GZ=$(md5 -q Packages.gz)
-MD5_BZ2=$(md5 -q Packages.bz2)
+
+echo "Generating SHA1 hashes..."
+
+SHA1_PACKAGES=$(shasum Packages | awk '{ print $1 }')
+SHA1_GZ=$(shasum Packages.gz | awk '{ print $1 }')
 
 echo "Generating SHA256 hashes..."
 
 SHA256_PACKAGES=$(shasum -a 256 Packages | awk '{ print $1 }')
 SHA256_GZ=$(shasum -a 256 Packages.gz | awk '{ print $1 }')
-SHA256_BZ2=$(shasum -a 256 Packages.bz2 | awk '{ print $1 }')
 
 echo "Creating Release file..."
 
@@ -49,12 +49,14 @@ Description: Fauxly Apple TV Repository
 MD5Sum:
  $MD5_PACKAGES $SIZE_PACKAGES Packages
  $MD5_GZ $SIZE_GZ Packages.gz
- $MD5_BZ2 $SIZE_BZ2 Packages.bz2
+
+SHA1:
+ $SHA1_PACKAGES $SIZE_PACKAGES Packages
+ $SHA1_GZ $SIZE_GZ Packages.gz
 
 SHA256:
  $SHA256_PACKAGES $SIZE_PACKAGES Packages
  $SHA256_GZ $SIZE_GZ Packages.gz
- $SHA256_BZ2 $SIZE_BZ2 Packages.bz2
 EOF
 
 echo "Repository updated successfully."
