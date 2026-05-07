@@ -16,29 +16,36 @@ echo "Compressing Packages..."
 gzip -kf Packages
 bzip2 -kf Packages
 
-echo "Calculating file sizes..."
+echo "Calculating hashes..."
 
-SIZE_PACKAGES=$(stat -f%z Packages)
-SIZE_GZ=$(stat -f%z Packages.gz)
-SIZE_BZ2=$(stat -f%z Packages.bz2)
-
-echo "Generating SHA256 hashes..."
+MD5_PACKAGES=$(md5 -q Packages)
+MD5_GZ=$(md5 -q Packages.gz)
+MD5_BZ2=$(md5 -q Packages.bz2)
 
 SHA256_PACKAGES=$(shasum -a 256 Packages | awk '{ print $1 }')
 SHA256_GZ=$(shasum -a 256 Packages.gz | awk '{ print $1 }')
 SHA256_BZ2=$(shasum -a 256 Packages.bz2 | awk '{ print $1 }')
 
+SIZE_PACKAGES=$(stat -f%z Packages)
+SIZE_GZ=$(stat -f%z Packages.gz)
+SIZE_BZ2=$(stat -f%z Packages.bz2)
+
 echo "Creating Release file..."
 
 cat > Release << EOF
-Origin: Fauxly Repo
-Label: Fauxly Repo
+Origin: Fauxly
+Label: Fauxly tvOS Repo
 Suite: stable
 Version: 1.0
-Codename: tvos
-Architectures: appletvos-arm64
+Codename: Fauxly
+Architectures: darwin-arm64, appletvos-arm64
 Components: main
 Description: Fauxly Apple TV Repository
+
+MD5Sum:
+ $MD5_PACKAGES $SIZE_PACKAGES Packages
+ $MD5_GZ $SIZE_GZ Packages.gz
+ $MD5_BZ2 $SIZE_BZ2 Packages.bz2
 
 SHA256:
  $SHA256_PACKAGES $SIZE_PACKAGES Packages
