@@ -3,7 +3,7 @@ Version: 1.0
 Architecture: appletvos-arm64
 Maintainer: Fauxly
 Depends: firmware (>= 13.0)
-Filename: repo/debs/com.fauxly.browser_1.0_appletvos-arm64.deb
+Filename: ./debs/com.fauxly.browser_1.0_appletvos-arm64.deb
 Size: 198780
 MD5sum: bb8185eff0f25feddeba7bd726d199cd
 SHA1: f603695edbd31cf1fbb7e57b19ed31bb94b81166
@@ -12,4 +12,18 @@ Section: Applications
 Description: Browser for Apple tvOS
 Author: Fauxly
 Name: Browser
+
+Package: com.whitetailani.Spartan
+Version: 1.0.0-RC7-nightly-20240113105525
+Architecture: appletvos-arm64
+Maintainer: WhitetailAni <joemama@thanos.lol>
+Depends: firmware (>=13.0)
+Filename: ./debs/com.fauxly.spartan_1.0_appletvos-arm64.deb
+Size: 13628962
+MD5sum: 8cdb8d7ea303dca88153d0cb6d19c48a
+SHA1: e74775aa2f9a59c15dbba12dfe3d04f591770e34
+SHA256: 2d2f004f05f59cf02beb8f3f3c256ac0f28bb760a8a52f6be7b254d8a0dda395
+Description: The first tvOS file browser
+Author: WhitetailAni <joemama@thanos.lol>
+Name: Spartan
 
