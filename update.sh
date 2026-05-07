@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Updating Packages..."
+echo "Updating tvOS repository..."
 
 dpkg-scanpackages -m ./debs > Packages
 
@@ -14,9 +14,9 @@ Label: Fauxly Repo
 Suite: stable
 Version: 1.0
 Codename: tvos
-Architectures: iphoneos-arm64
+Architectures: darwin-arm64, appletvos-arm64
 Components: main
-Description: Fauxly tvOS Jailbreak Repository
+Description: Fauxly Apple TV Repository
 EOF
 
 echo "Generating SHA256 hashes..."
