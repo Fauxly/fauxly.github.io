@@ -1,13 +1,13 @@
 Package: com.fauxly.browser
 Version: 1.0
-Architecture: iphoneos-arm64
+Architecture: appletvos-arm64
 Maintainer: Fauxly
 Depends: firmware (>= 13.0)
 Filename: repo/debs/com.fauxly.browser_1.0_appletvos-arm64.deb
-Size: 198708
-MD5sum: 413c984571afd47a66eb7ffe087c955e
-SHA1: 11128c0b76b86cbc0ce751ec618008ea27cc4b9a
-SHA256: fd54a8dd4ab5d0015c7df32c1cb3717bb20985c52b1ee300bd225786c179b7e5
+Size: 198780
+MD5sum: bb8185eff0f25feddeba7bd726d199cd
+SHA1: f603695edbd31cf1fbb7e57b19ed31bb94b81166
+SHA256: 801c6cfef304846fee8ea9c0bbfbc8631793c9d4cb9c82945a8e61ab25cc4ca7
 Section: Applications
 Description: Browser for Apple tvOS
 Author: Fauxly
