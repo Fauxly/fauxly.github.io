@@ -14,17 +14,19 @@ Description: Browser for tvOS
 Author: Fauxly
 Name: Browser
 
-Package: com.whitetailani.Spartan
-Version: 1.0.0-RC7-nightly-20240113105525
-Architecture: appletvos-arm64
-Maintainer: WhitetailAni <joemama@thanos.lol>
-Depends: firmware (>=13.0)
-Filename: ./debs/com.whitetailani.spartan_1.0.0-RC7-nightly-20240113105525_appletvos-arm64.deb
-Size: 13628962
-MD5sum: 8cdb8d7ea303dca88153d0cb6d19c48a
-SHA1: e74775aa2f9a59c15dbba12dfe3d04f591770e34
-SHA256: 2d2f004f05f59cf02beb8f3f3c256ac0f28bb760a8a52f6be7b254d8a0dda395
-Description: The first tvOS file browser
-Author: WhitetailAni <joemama@thanos.lol>
+Package: com.fauxly.spartan
+Version: 1.0-1+debug
+Architecture: iphoneos-arm64
+Maintainer: Fauxly
+Installed-Size: 12068
+Depends: firmware (>= 15.0)
+Filename: ./debs/com.fauxly.spartan_1.0-1+debug_iphoneos-arm64.deb
+Size: 10978604
+MD5sum: 26fc45cb2de8df99e6dfdedf14042acb
+SHA1: a1c40acd16aa27032ea633df1309b84a1ac6aa35
+SHA256: 588d01d76943f11da6822a13c4b357c77a3c771b1670f4d53938f82981d4dccb
+Section: Applications
+Description: Spartan File Manager for tvOS
+Author: Fauxly
 Name: Spartan
 
