@@ -47,9 +47,10 @@
         }
 
         .button {
-            display: inline-block;
-            margin-top: 35px;
-            padding: 16px 32px;
+            display: block;
+            width: 260px;
+            margin: 18px auto;
+            padding: 16px 28px;
             background: #0A84FF;
             color: white;
             text-decoration: none;
@@ -94,12 +95,22 @@
 
         <p>
             General repository for tvOS jailbreak packages.<br>
-            Compatible with PurePKG and Apple TV.
+            Compatible with Apple TV package managers.
         </p>
 
         <a class="button"
            href="purepkg://addrepo?url=https://fauxly.github.io/">
             Add to PurePKG
+        </a>
+
+        <a class="button"
+           href="sileo://source/https://fauxly.github.io/">
+            Add to Sileo
+        </a>
+
+        <a class="button"
+           href="zbra://sources/add/https://fauxly.github.io/">
+            Add to Zebra
         </a>
 
         <div class="repo">
