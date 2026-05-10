@@ -5,10 +5,32 @@ echo "Cleaning old repository files..."
 rm -f Packages
 rm -f Packages.gz
 rm -f Release
+rm -f Packages.new
 
 echo "Generating Packages..."
 
 dpkg-scanpackages -m ./debs /dev/null > Packages
+
+echo "Adding icons to Packages..."
+
+REPO_URL="https://fauxly.github.io/"
+
+while IFS= read -r line; do
+
+    echo "$line" >> Packages.new
+
+    if [[ $line == Package:* ]]; then
+        PACKAGE=$(echo "$line" | awk '{print $2}')
+    fi
+
+    if [[ $line == Filename:* ]]; then
+        ICON_URL="$REPO_URL/icons/$PACKAGE.png"
+        echo "Icon: $ICON_URL" >> Packages.new
+    fi
+
+done < Packages
+
+mv Packages.new Packages
 
 echo "Compressing Packages..."
 
