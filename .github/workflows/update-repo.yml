@@ -2,9 +2,12 @@ name: Update tvOS Repository
 
 on:
   workflow_dispatch:
+
   push:
     paths:
       - 'debs/*.deb'
+      - 'icons/*.png'
+      - 'update.sh'
 
 permissions:
   contents: write
@@ -40,16 +43,3 @@ jobs:
           git commit -m "Update repository metadata" || echo "No changes"
 
           git push
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: repo-${{ github.run_number }}
-          name: Fauxly Repo Update ${{ github.run_number }}
-          files: |
-            Packages
-            Packages.gz
-            Release
-            debs/*.deb
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
