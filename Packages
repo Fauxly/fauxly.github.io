@@ -27,7 +27,7 @@ SHA1: a1c40acd16aa27032ea633df1309b84a1ac6aa35
 SHA256: 588d01d76943f11da6822a13c4b357c77a3c771b1670f4d53938f82981d4dccb
 Section: Applications
 Description: Spartan File Manager for tvOS
-https://github.com/Fauxly/fauxly.github.io/blob/ba32b53029f9637a461a48b44b7adeacf016e941/icons/spartan.png
+Icon: https://github.com/Fauxly/fauxly.github.io/blob/ba32b53029f9637a461a48b44b7adeacf016e941/icons/spartan.png
 Author: Fauxly
 Name: Spartan
 
