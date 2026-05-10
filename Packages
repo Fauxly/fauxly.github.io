@@ -21,13 +21,13 @@ Maintainer: Fauxly
 Installed-Size: 12068
 Depends: firmware (>= 15.0)
 Filename: ./debs/com.fauxly.spartan_1.0-1+debug_iphoneos-arm64.deb
+Icon: https://fauxly.github.io/icons/com.fauxly.spartan.png
 Size: 10978604
 MD5sum: 26fc45cb2de8df99e6dfdedf14042acb
 SHA1: a1c40acd16aa27032ea633df1309b84a1ac6aa35
 SHA256: 588d01d76943f11da6822a13c4b357c77a3c771b1670f4d53938f82981d4dccb
 Section: Applications
 Description: Spartan File Manager for tvOS
-Icon: https://github.com/Fauxly/fauxly.github.io/blob/ba32b53029f9637a461a48b44b7adeacf016e941/icons/spartan.png
 Author: Fauxly
 Name: Spartan
 
