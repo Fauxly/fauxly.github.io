@@ -9,7 +9,7 @@ rm -f Packages.new
 
 echo "Generating Packages..."
 
-dpkg-scanpackages -m ./debs /dev/null > Packages
+dpkg-scanpackages --multiversion ./debs /dev/null > Packages
 
 echo "Adding icons to Packages..."
 
