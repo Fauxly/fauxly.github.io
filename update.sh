@@ -13,7 +13,7 @@ dpkg-scanpackages -m ./debs /dev/null > Packages
 
 echo "Adding icons to Packages..."
 
-REPO_URL="https://fauxly.github.io/"
+REPO_URL="https://fauxly.github.io"
 
 while IFS= read -r line; do
 
@@ -24,8 +24,12 @@ while IFS= read -r line; do
     fi
 
     if [[ $line == Filename:* ]]; then
-        ICON_URL="$REPO_URL/icons/$PACKAGE.png"
-        echo "Icon: $ICON_URL" >> Packages.new
+
+        if [ -f "icons/$PACKAGE.png" ]; then
+            ICON_URL="$REPO_URL/icons/$PACKAGE.png"
+            echo "Icon: $ICON_URL" >> Packages.new
+        fi
+
     fi
 
 done < Packages
