@@ -5,6 +5,7 @@ Maintainer: Fauxly
 Installed-Size: 968
 Depends: firmware (>= 15.0)
 Filename: ./debs/com.fauxly.browser_1.0-4+debug_iphoneos-arm64.deb
+Icon: https://fauxly.github.io/icons/com.fauxly.browser.png
 Size: 266092
 MD5sum: 292756e03f9696691db540f57efecfa9
 SHA1: 06711c28bc077266caaf50b6c02c0c1f26b478d4
