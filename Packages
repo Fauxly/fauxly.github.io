@@ -78,23 +78,3 @@ Depiction: https://raw.githubusercontent.com/Zenzeq/tv/main/depictions/repo_depi
 Icon: https://raw.githubusercontent.com/Zenzeq/tv/4219396059cb8ed6433dce0a0163ec1b2f40bdb8/tweak.png
 Name: TrollHelper
 
-Package: wiki.qaq.chromatic.roothide
-Version: 3.0-roothide-release-1753762792.8c2ea30
-Architecture: iphoneos-arm64e
-Maintainer: Saily Team <support.0xa1@qaq.wiki>
-Pre-Depends: firmware (>= 13.0), dpkg, uikittools
-Conflicts: wiki.qaq.chromatic
-Filename: ./debs/chromatic.rel.ci.1753762792.8c2ea30.deb
-Size: 3359784
-MD5sum: 608fd304c956d77224fa540cb02c9d05
-SHA1: ce3f9600e0569ec726d74dd6a4dc737e7724306e
-SHA256: a7fa67fd69b3d5b7341597fac7c143a9a2bcbaa9ec62cb9c70d46ce9ac1cd7c4
-Section: Applications
-Homepage: https://sailyteam.github.io/Saily/index.html
-Description: Modern. Fast. Beautiful.
-Author: Saily Team <support.0xa1@qaq.wiki>
-Depiction: https://sailyteam.github.io/Saily/index.html
-Icon: https://sailyteam.github.io/Saily/Resources/icon.png
-Name: Saily (RootHide)
-Website: https://sailyteam.github.io/Saily/index.html
-
