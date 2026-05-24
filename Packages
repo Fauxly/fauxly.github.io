@@ -28,3 +28,37 @@ Description: The first tvOS file browser
 Author: WhitetailAni <joemama@thanos.lol>
 Name: Spartan
 
+Package: com.zenzeq.TrollDecrypt
+Version: 1.0
+Architecture: appletvos-arm64
+Maintainer: fiore
+Depends: firmware (>= 14.0)
+Filename: ./debs/com.zenzeq.trolldecrypt.deb
+Size: 479888
+MD5sum: b833c6da28aaf5d20d6fb6440122f6f5
+SHA1: 78f20dc2e234786b25b09722e2734bc962c64e08
+SHA256: 513b87b457b8d165abc129e5d01e8f5a804f712050cd2010ffd681b737d86f01
+Section: Tools
+Description: Decrypt AppStore apps to use for TrollStore.
+Author: straight-tamago
+Depiction: https://raw.githubusercontent.com/Zenzeq/tv/main/depictions/repo_depictions/json/TrollDecrypt.json
+Icon: https://raw.githubusercontent.com/Zenzeq/tv/4219396059cb8ed6433dce0a0163ec1b2f40bdb8/tweak.png
+Name: TrollDecrypt
+
+Package: com.zenzeq.TrollHelper
+Version: 1.0
+Architecture: appletvos-arm64
+Maintainer: ZenZeq
+Depends: firmware (>= 14.0)
+Filename: ./debs/com.zenzeq.trollhelper.deb
+Size: 360408
+MD5sum: 85a896990a24f5b229927af92486f316
+SHA1: b8cf529b94b7af40028985982aab0aa5f84a5956
+SHA256: 08f65bee2fc5725433c4cb1e1abd55a0fb51d528dfee3a7f4469f6b929fa3081
+Section: Tools
+Description: Install TrollStore Persistence Helper on Apple TV HD and 4K devices. This also works after updating the device to any firmware from tvOS 14 - 17.0.
+Author: straight-tamago
+Depiction: https://raw.githubusercontent.com/Zenzeq/tv/main/depictions/repo_depictions/json/TrollHelper.json
+Icon: https://raw.githubusercontent.com/Zenzeq/tv/4219396059cb8ed6433dce0a0163ec1b2f40bdb8/tweak.png
+Name: TrollHelper
+
