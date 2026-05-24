@@ -78,3 +78,24 @@ Depiction: https://raw.githubusercontent.com/Zenzeq/tv/main/depictions/repo_depi
 Icon: https://raw.githubusercontent.com/Zenzeq/tv/4219396059cb8ed6433dce0a0163ec1b2f40bdb8/tweak.png
 Name: TrollHelper
 
+Package: org.xbmc.kodi-tvos64
+Version: 22.0-0~alpha1
+Architecture: appletvos-arm64
+Maintainer: Memphiz et al.
+Installed-Size: 240152
+Pre-Depends: cy+cpu.arm64
+Conflicts: org.xbmc.kodi-tvos
+Replaces: org.xbmc.kodi-tvos
+Filename: ./debs/kodi-20241025-ad9cf2eb-cdatetime-std-chrono-20315-tvos.deb
+Size: 55493032
+MD5sum: 78b68b542e8998dea2ff3d795dc9e0a8
+SHA1: 6337bce4f03d48f476c760a974fad898c65452bc
+SHA256: 30e6df5f0b0de10397af60531052e41dbc5f30170fc37665e5a577d937bb6a03
+Section: Multimedia
+Priority: Extra
+Homepage: http://kodi.tv
+Description: Kodi Entertainment Center for iOS
+Author: Team-Kodi
+Icon: file:///Applications/Kodi.app/AppIcon57x57.png
+Name: Kodi-tvOS (64-bit)
+
