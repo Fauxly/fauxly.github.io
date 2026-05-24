@@ -14,6 +14,22 @@ Description: Browser for Apple tvOS
 Author: Fauxly
 Name: Browser
 
+Package: com.fauxly.minecraftstoragefix
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: Fauxly
+Depends: firmware (>= 14.0)
+Filename: ./debs/MinecraftStorageFix_rootful.deb
+Size: 19504
+MD5sum: 75f39a271cfac4547394f95e926d350f
+SHA1: 5f8888d50d8bfaa36aceada1e2b1901123c93937
+SHA256: 476ee85c70bce540dbdeef7ea1eb686e42cadfaccf9f1b546eb25dbc69db360e
+Section: Tweaks
+Priority: optional
+Description: Minecraft Storage Fix for tvOS
+Author: Fauxly
+Name: MinecraftStorageFix
+
 Package: com.whitetailani.Spartan
 Version: 1.0.0-RC7-nightly-20240113105525
 Architecture: appletvos-arm64
