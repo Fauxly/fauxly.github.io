@@ -1,3 +1,21 @@
+Package: cc.forcequit.stasis
+Version: 2.0
+Architecture: appletvos-arm64
+Maintainer: Taj C (forcequit)
+Installed-Size: 1084
+Depends: firmware (>= 14.0)
+Conflicts: cc.forcequit.stasis.lite
+Filename: ./debs/cc.forcequit.stasis_2.0_appletvos-arm64.deb
+Size: 951908
+MD5sum: 0b66791681540b0f5dd1103e9b6908ad
+SHA1: 9eb3e0d80582a887eeb9034378eec5886aa16082
+SHA256: 7c69dd814e8dd981d81e004713fe6418b9fce5af31b1463474da1299c9eb072e
+Section: Utilities
+Description: Graphical app to block OTA software updates on modern tvOS. Requires tvOS 14.0 or newer!
+Author: Taj C (forcequit)
+Icon: https://raw.githubusercontent.com/forcequitOS/etaTV/main/assets/icons/StasisIcon256.png
+Name: Stasis
+
 Package: com.fauxly.browser
 Version: 1.0
 Architecture: appletvos-arm64
