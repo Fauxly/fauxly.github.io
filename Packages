@@ -16,37 +16,34 @@ Author: Taj C (forcequit)
 Icon: https://raw.githubusercontent.com/forcequitOS/etaTV/main/assets/icons/StasisIcon256.png
 Name: Stasis
 
-Package: com.fauxly.browser
-Version: 1.0
+Package: com.fauxly.terminaltv
+Version: 1.0.1
 Architecture: appletvos-arm64
 Maintainer: Fauxly
-Depends: firmware (>= 13.0)
-Filename: ./debs/com.fauxly.browser_1.0_appletvos-arm64.deb
-Icon: https://fauxly.github.io/icons/com.fauxly.browser.png
-Size: 198780
-MD5sum: bb8185eff0f25feddeba7bd726d199cd
-SHA1: f603695edbd31cf1fbb7e57b19ed31bb94b81166
-SHA256: 801c6cfef304846fee8ea9c0bbfbc8631793c9d4cb9c82945a8e61ab25cc4ca7
+Filename: ./debs/TerminalTV_1.0.1.deb
+Size: 8503884
+MD5sum: 840e9af59284c96cea5fef492c0090e3
+SHA1: 907b30133de2713b2e525407a01d683881aa7d8a
+SHA256: 588cdfd605fffeaa37488fb167329dc24faccc758fb3ae7847561e15097420f2
+Section: Utilities
+Priority: optional
+Description: Real Shell Terminal for Apple TV
+Name: TerminalTV
+
+Package: com.fixstricks.browser
+Version: 1.1.0
+Architecture: appletvos-arm64
+Maintainer: Fauxly
+Filename: ./debs/Browser_1.1.0.deb
+Size: 209868
+MD5sum: 9ed90770709c029c0364ff98ab282d79
+SHA1: 8f59ee0c08fef6cc6018cb523f64e7b18d4dbd5c
+SHA256: 12c0a667e03be3714b81584c5be6c1cc94ab74c63799b8d3e1cd7d7e17fe64a9
 Section: Applications
-Description: Browser for Apple tvOS
+Priority: optional
+Description: Browser for tvOS
 Author: Fauxly
 Name: Browser
-
-Package: com.fauxly.minecraftstoragefix
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: Fauxly
-Depends: firmware (>= 14.0)
-Filename: ./debs/MinecraftStorageFix_rootful.deb
-Size: 19504
-MD5sum: 75f39a271cfac4547394f95e926d350f
-SHA1: 5f8888d50d8bfaa36aceada1e2b1901123c93937
-SHA256: 476ee85c70bce540dbdeef7ea1eb686e42cadfaccf9f1b546eb25dbc69db360e
-Section: Tweaks
-Priority: optional
-Description: Minecraft Storage Fix for tvOS
-Author: Fauxly
-Name: MinecraftStorageFix
 
 Package: com.whitetailani.Spartan
 Version: 1.0.0-RC7-nightly-20240113105525
@@ -95,25 +92,4 @@ Author: straight-tamago
 Depiction: https://raw.githubusercontent.com/Zenzeq/tv/main/depictions/repo_depictions/json/TrollHelper.json
 Icon: https://raw.githubusercontent.com/Zenzeq/tv/4219396059cb8ed6433dce0a0163ec1b2f40bdb8/tweak.png
 Name: TrollHelper
-
-Package: org.xbmc.kodi-tvos64
-Version: 22.0-0~alpha1
-Architecture: appletvos-arm64
-Maintainer: Memphiz et al.
-Installed-Size: 240152
-Pre-Depends: cy+cpu.arm64
-Conflicts: org.xbmc.kodi-tvos
-Replaces: org.xbmc.kodi-tvos
-Filename: ./debs/kodi-20241025-ad9cf2eb-cdatetime-std-chrono-20315-tvos.deb
-Size: 55493032
-MD5sum: 78b68b542e8998dea2ff3d795dc9e0a8
-SHA1: 6337bce4f03d48f476c760a974fad898c65452bc
-SHA256: 30e6df5f0b0de10397af60531052e41dbc5f30170fc37665e5a577d937bb6a03
-Section: Multimedia
-Priority: Extra
-Homepage: http://kodi.tv
-Description: Kodi Entertainment Center for iOS
-Author: Team-Kodi
-Icon: file:///Applications/Kodi.app/AppIcon57x57.png
-Name: Kodi-tvOS (64-bit)
 
