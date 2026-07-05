@@ -30,20 +30,20 @@ Priority: optional
 Description: Real Shell Terminal for Apple TV
 Name: TerminalTV
 
-Package: com.fixstricks.browser
-Version: 1.1.0
+Package: com.fauxly.tvosbrowser
+Version: 2.0.1
 Architecture: appletvos-arm64
-Maintainer: Fauxly
-Filename: ./debs/Browser_1.1.0.deb
-Size: 209868
-MD5sum: 9ed90770709c029c0364ff98ab282d79
-SHA1: 8f59ee0c08fef6cc6018cb523f64e7b18d4dbd5c
-SHA256: 12c0a667e03be3714b81584c5be6c1cc94ab74c63799b8d3e1cd7d7e17fe64a9
-Section: Applications
-Priority: optional
+Maintainer: fauxly
+Depends: firmware (>= 13.0)
+Filename: ./debs/com.fauxly.tvosbrowser_2.0.1_appletvos-arm64.deb
+Size: 335724
+MD5sum: 5d6239182c424cd7c63bf396573ad0b4
+SHA1: c68ae205e3e1294e33ed3c35345dc4597a0c76fd
+SHA256: cdeac0c48e66ce9a8c1cb4c675632ca32907ff4a360be6968755801530e786f9
+Section: Application
 Description: Browser for tvOS
-Author: Fauxly
-Name: Browser
+Author: fauxly
+Name: tvOS Browser Pro
 
 Package: com.whitetailani.Spartan
 Version: 1.0.0-RC7-nightly-20240113105525
