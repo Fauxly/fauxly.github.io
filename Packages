@@ -36,10 +36,10 @@ Architecture: appletvos-arm64
 Maintainer: fauxly
 Depends: firmware (>= 13.0)
 Filename: ./debs/com.fauxly.tvosbrowser_2.0.1_appletvos-arm64.deb
-Size: 335724
-MD5sum: 5d6239182c424cd7c63bf396573ad0b4
-SHA1: c68ae205e3e1294e33ed3c35345dc4597a0c76fd
-SHA256: cdeac0c48e66ce9a8c1cb4c675632ca32907ff4a360be6968755801530e786f9
+Size: 334496
+MD5sum: fa2dbc4ed2469054020ada375c50becd
+SHA1: a96097a5421708978f6a80edcc535785dc012c41
+SHA256: ce40929b647447533332d709c14847777bb0d890ea261ef7b0844bef6ca24e61
 Section: Application
 Description: Browser for tvOS
 Author: fauxly
