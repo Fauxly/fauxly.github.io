@@ -45,6 +45,24 @@ Description: Browser for tvOS
 Author: fauxly
 Name: tvOS Browser Pro
 
+Package: com.fixstricks.atlas
+Version: 1.0.0
+Architecture: appletvos-arm64
+Maintainer: Fix's Tricks
+Depends: firmware (>= 15.0), tsu
+Filename: ./debs/com.fixstricks.atlas_1.0.0_appletvos-arm64.deb
+Size: 199576
+MD5sum: cffbb742637401ab855924dd847e154e
+SHA1: 167f4a98309718bb495bcaba7eb28a19bc8f26d5
+SHA256: 81d8749802293bd16d1a2783805d77c01017f01eb5b08805ceabb08b1d0dd7cd
+Section: Utilities
+Homepage: https://apt.procurs.us
+Description: Менеджер APT-пакетов для джейлбрейкнутого Apple TV.
+ Позволяет просматривать, устанавливать и удалять твики
+ из Procursus-совместимых репозиториев прямо на устройстве.
+Author: Fix's Tricks
+Name: Atlas
+
 Package: com.whitetailani.Spartan
 Version: 1.0.0-RC7-nightly-20240113105525
 Architecture: appletvos-arm64
