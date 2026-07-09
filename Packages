@@ -52,10 +52,10 @@ Maintainer: Fix's Tricks
 Depends: firmware (>= 15.0)
 Recommends: tsu
 Filename: ./debs/com.fixstricks.atlas_1.0.0_appletvos-arm64.deb
-Size: 148100
-MD5sum: ed7450d4396897c26b4809806da3214d
-SHA1: 6e4fc86b7a85c14de324c0bff89cb363a915d61d
-SHA256: e58adc21a08086495273aef03dedc815036fec082dd189c0e9b1e44cdb94a625
+Size: 149812
+MD5sum: a45e63ca3336e691c92d11a3c47aff8d
+SHA1: 99f8187015cc07fb349f4e0cc26fc53d1c8f9065
+SHA256: f98158bf6c6f5533c455e5aa24a1d4b1465dbbf665a6ba6f82e0ec95125a1e3c
 Section: Utilities
 Homepage: https://apt.procurs.us
 Description: Менеджер APT-пакетов для джейлбрейкнутого Apple TV.
