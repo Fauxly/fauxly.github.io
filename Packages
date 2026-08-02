@@ -27,23 +27,19 @@ Description: Browser for tvOS
 Author: fauxly
 Name: tvOS Browser Pro
 
-Package: com.fixstricks.atlas
-Version: 1.0.5-1
+Package: com.whitetailani.Spartan
+Version: 1.0.0-RC7-nightly-20240113105525
 Architecture: appletvos-arm64
-Maintainer: Fix's Tricks
-Depends: firmware (>= 15.0)
-Filename: ./debs/com.fixstricks.atlas_1.0.5-1_appletvos-arm64.deb
-Size: 1190688
-MD5sum: d6f4202fe4a5a3c6fede355132ef1456
-SHA1: c916cd9ec8fdfb49073fbd68ca30b3bd9075748f
-SHA256: 9211ff2da861cac66db67783d22e24201b4111883780ce8f8607d8014131902b
-Section: Utilities
-Homepage: https://apt.procurs.us
-Description: Менеджер APT-пакетов для джейлбрейкнутого Apple TV.
- Позволяет просматривать, устанавливать и удалять твики
- из Procursus-совместимых репозиториев прямо на устройстве.
-Author: Fix's Tricks
-Name: Atlas
+Maintainer: WhitetailAni <joemama@thanos.lol>
+Depends: firmware (>=13.0)
+Filename: ./debs/com.fauxly.spartan_1.0_appletvos-arm64 — копия.deb
+Size: 13628962
+MD5sum: 8cdb8d7ea303dca88153d0cb6d19c48a
+SHA1: e74775aa2f9a59c15dbba12dfe3d04f591770e34
+SHA256: 2d2f004f05f59cf02beb8f3f3c256ac0f28bb760a8a52f6be7b254d8a0dda395
+Description: The first tvOS file browser
+Author: WhitetailAni <joemama@thanos.lol>
+Name: Spartan
 
 Package: com.whitetailani.Spartan
 Version: 1.0.0-RC7-nightly-20240113105525
