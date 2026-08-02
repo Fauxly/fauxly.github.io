@@ -1,3 +1,19 @@
+Package: com.fauxly.atlas
+Version: 1.0.64-1
+Architecture: appletvos-arm64
+Maintainer: Fauxly
+Depends: firmware (>= 15.0)
+Filename: ./debs/com.fauxly.atlas_1.0.64-1_appletvos-arm64.deb
+Size: 3299768
+MD5sum: 1b51f77612cba932b66d5d6a818d4746
+SHA1: bedbcf39652340fed4a1f98122bb0220550ac0f5
+SHA256: 86627e6e48183b364099d54a1ef8e938d9b922be3e0fd0c95feef2d53dfc1fa1
+Section: Utilities
+Homepage: https://apt.procurs.us
+Description: APT package manager for jailbroken Apple TV.
+Author: Fauxly
+Name: Atlas
+
 Package: com.fauxly.terminaltv
 Version: 1.0.1
 Architecture: appletvos-arm64
@@ -26,24 +42,6 @@ Section: Application
 Description: Browser for tvOS
 Author: fauxly
 Name: tvOS Browser Pro
-
-Package: com.fixstricks.atlas
-Version: 1.0.63-1
-Architecture: appletvos-arm64
-Maintainer: Fix's Tricks
-Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.atlas_1.0.63-1_appletvos-arm64.deb
-Size: 3299268
-MD5sum: c09ad21b70b328a769aac909aa7be61e
-SHA1: 2b588b23e740a4ebe5183fa7a5f393e455b24e11
-SHA256: 02ac976c80cc8d272cb45f7009a2b9d5088592b080ea64394b8e03c623434d15
-Section: Utilities
-Homepage: https://apt.procurs.us
-Description: Менеджер APT-пакетов для джейлбрейкнутого Apple TV.
- Позволяет просматривать, устанавливать и удалять твики
- из Procursus-совместимых репозиториев прямо на устройстве.
-Author: Fix's Tricks
-Name: Atlas
 
 Package: com.whitetailani.Spartan
 Version: 1.0.0-RC7-nightly-20240113105525
