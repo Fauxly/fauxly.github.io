@@ -4,124 +4,303 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fauxly Repo</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
+        *, *::before, *::after {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background: linear-gradient(180deg, #0b0b0f 0%, #16161d 100%);
-            color: white;
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #08080c;
+            color: #e4e4eb;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             text-align: center;
+            overflow-x: hidden;
         }
 
+        /* --- ambient glow --- */
+        .ambient {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .ambient::before,
+        .ambient::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: .35;
+            animation: drift 14s ease-in-out infinite alternate;
+        }
+        .ambient::before {
+            width: 480px; height: 480px;
+            background: radial-gradient(circle, #6d3bff 0%, transparent 70%);
+            top: -120px; left: 50%;
+            transform: translateX(-60%);
+        }
+        .ambient::after {
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, #00c8ff 0%, transparent 70%);
+            top: 60px; left: 50%;
+            transform: translateX(10%);
+            animation-delay: -7s;
+        }
+        @keyframes drift {
+            0%   { transform: translateX(-60%) translateY(0); }
+            100% { transform: translateX(-50%) translateY(30px); }
+        }
+
+        /* --- grid overlay --- */
+        .grid-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
+            background-size: 64px 64px;
+            mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, black 0%, transparent 100%);
+            -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, black 0%, transparent 100%);
+        }
+
+        /* --- content --- */
         .container {
-            max-width: 700px;
-            margin: auto;
-            padding: 80px 20px;
+            position: relative;
+            z-index: 1;
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 100px 24px 80px;
         }
 
+        /* --- logo --- */
+        .logo-wrap {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 36px;
+        }
+        .logo-glow {
+            position: absolute;
+            inset: -18px;
+            border-radius: 36px;
+            background: conic-gradient(from 220deg, #6d3bff, #00c8ff, #6d3bff);
+            opacity: .55;
+            filter: blur(22px);
+            animation: spin-glow 6s linear infinite;
+        }
+        @keyframes spin-glow {
+            to { transform: rotate(360deg); }
+        }
         .logo {
-            width: 120px;
-            height: 120px;
-            margin: auto;
+            position: relative;
+            width: 110px;
+            height: 110px;
             border-radius: 28px;
-            background: #1f1f28;
+            background: linear-gradient(135deg, #18182a 0%, #1a1a2e 100%);
+            border: 1px solid rgba(255,255,255,.08);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 54px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            font-size: 50px;
+            z-index: 1;
         }
 
+        /* --- text --- */
         h1 {
-            margin-top: 30px;
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 700;
+            letter-spacing: -.02em;
+            line-height: 1.1;
+            background: linear-gradient(180deg, #ffffff 30%, rgba(255,255,255,.6) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        p {
-            font-size: 18px;
-            opacity: 0.75;
-            line-height: 1.6;
+        .tagline {
+            margin-top: 14px;
+            font-size: 16px;
+            line-height: 1.65;
+            color: rgba(255,255,255,.5);
+            max-width: 380px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .button {
-            display: block;
-            width: 260px;
-            margin: 18px auto;
-            padding: 16px 28px;
-            background: #0A84FF;
-            color: white;
-            text-decoration: none;
-            border-radius: 18px;
-            font-size: 18px;
+        /* --- buttons --- */
+        .buttons {
+            margin-top: 44px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 15px 24px;
+            border-radius: 16px;
+            font-size: 16px;
             font-weight: 600;
-            transition: 0.2s ease;
-            box-shadow: 0 10px 25px rgba(10,132,255,0.35);
+            font-family: inherit;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid rgba(255,255,255,.06);
+            background: rgba(255,255,255,.04);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: background .2s, border-color .2s, transform .15s;
+            cursor: pointer;
         }
-
-        .button:hover {
+        .btn:hover {
+            background: rgba(255,255,255,.08);
+            border-color: rgba(255,255,255,.12);
             transform: translateY(-2px);
-            opacity: 0.95;
+        }
+        .btn:active {
+            transform: translateY(0);
         }
 
-        .repo {
-            margin-top: 45px;
-            padding: 18px;
-            border-radius: 18px;
-            background: rgba(255,255,255,0.05);
-            word-break: break-all;
-            font-size: 15px;
-            opacity: 0.85;
+        .btn .icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .btn .icon svg {
+            width: 14px;
+            height: 14px;
         }
 
-        .footer {
-            margin-top: 60px;
+        .btn-pure .icon { background: #a855f7; }
+
+        /* --- repo url chip --- */
+        .repo-chip {
+            margin-top: 36px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 12px;
+            background: rgba(255,255,255,.04);
+            border: 1px solid rgba(255,255,255,.06);
             font-size: 14px;
-            opacity: 0.5;
+            color: rgba(255,255,255,.55);
+            font-family: 'SF Mono', ui-monospace, monospace;
+            letter-spacing: .01em;
+            cursor: pointer;
+            transition: background .2s, border-color .2s;
+            user-select: all;
+        }
+        .repo-chip:hover {
+            background: rgba(255,255,255,.07);
+            border-color: rgba(255,255,255,.1);
+        }
+        .repo-chip svg {
+            flex-shrink: 0;
+            opacity: .45;
+        }
+
+        /* --- footer --- */
+        .footer {
+            margin-top: 56px;
+            font-size: 13px;
+            color: rgba(255,255,255,.22);
+            letter-spacing: .02em;
+        }
+        .footer a {
+            color: rgba(255,255,255,.35);
+            text-decoration: none;
+            transition: color .2s;
+        }
+        .footer a:hover { color: rgba(255,255,255,.55); }
+
+        /* --- entrance --- */
+        @keyframes fade-up {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .container > * {
+            opacity: 0;
+            animation: fade-up .7s ease forwards;
+        }
+        .container > :nth-child(1) { animation-delay: .1s; }
+        .container > :nth-child(2) { animation-delay: .2s; }
+        .container > :nth-child(3) { animation-delay: .3s; }
+        .container > :nth-child(4) { animation-delay: .45s; }
+        .container > :nth-child(5) { animation-delay: .6s; }
+        .container > :nth-child(6) { animation-delay: .7s; }
+
+        /* --- reduced motion --- */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0s !important;
+                transition-duration: 0s !important;
+            }
+            .container > * { opacity: 1; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+<div class="ambient"></div>
+<div class="grid-overlay"></div>
 
-        <div class="logo">
-            🦊
-        </div>
+<div class="container">
 
-        <h1>Fauxly Repo</h1>
+    <div class="logo-wrap">
+        <div class="logo-glow"></div>
+        <div class="logo">🦊</div>
+    </div>
 
-        <p>
-            General repository for tvOS jailbreak packages.<br>
-            Compatible with Apple TV package managers.
-        </p>
+    <h1>Fauxly Repo</h1>
 
-        <a class="button"
+    <p class="tagline">
+        tvOS jailbreak packages for Apple&nbsp;TV.<br>
+        Works with your favourite package manager.
+    </p>
+
+    <div class="buttons">
+        <a class="btn btn-pure"
            href="purepkg://addrepo?url=https://fauxly.github.io/">
+            <span class="icon">
+                <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1v12M1 7h12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </span>
             Add to PurePKG
         </a>
 
-        <a class="button"
-           href="sileo://source/https://fauxly.github.io/">
-            Add to Sileo
-        </a>
-
-        <a class="button"
-           href="zbra://sources/add/https://fauxly.github.io/">
-            Add to Zebra
-        </a>
-
-        <div class="repo">
-            https://fauxly.github.io/
-        </div>
-
-        <div class="footer">
-            Hosted on GitHub Pages
-        </div>
 
     </div>
+
+    <div class="repo-chip" title="Copy repo URL">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4.5" y="1" width="8.5" height="8.5" rx="2" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M9.5 5v5.5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        https://fauxly.github.io/
+    </div>
+
+    <div class="footer">
+        Hosted on <a href="https://github.com/Fauxly" target="_blank" rel="noopener">GitHub</a>
+    </div>
+
+</div>
 
 </body>
 </html>
