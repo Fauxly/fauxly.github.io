@@ -1,4 +1,5 @@
-# 🦊 Fauxly Repo
+# <img width="99" height="99" alt="CydiaIcon" src="https://github.com/user-attachments/assets/3fdc51f1-00f7-475d-b67b-ba4214afbab5" /> Fauxly Repo
+
 
 Tweaks, utilities and apps for jailbroken Apple TV.
 
