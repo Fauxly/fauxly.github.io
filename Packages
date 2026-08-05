@@ -15,16 +15,16 @@ Author: Fauxly
 Name: Atlas
 
 Package: com.fauxly.closeall
-Version: 1.0.0-24+debug
+Version: 1.0.0-30+debug
 Architecture: appletvos-arm64
 Maintainer: Fauxly
 Installed-Size: 80
 Depends: mobilesubstrate
-Filename: ./debs/com.fauxly.closeall_1.0.0-24+debug_appletvos-arm64.deb
-Size: 8352
-MD5sum: 74de366b432eb2c78b13d885fb68613e
-SHA1: 141a19e757bf8a50812eaf8b13d0a3412190cec0
-SHA256: 8f845bc3b6f5fccde414161df62afb615382b1da7f8bb231d49c6d8808fda6e8
+Filename: ./debs/com.fauxly.closeall_1.0.0-30+debug_appletvos-arm64.deb
+Size: 8572
+MD5sum: b48048993315ff9ff63ad711cc3ac7ec
+SHA1: e571d59b6e586ad1c2f14d4f173f17fd04473b56
+SHA256: 1810229f652652365c676222d1a7f968e13e1ff9f02e9f5a01632bcdc16edd59
 Section: Tweaks
 Description: Liquid Glass-style "Close All" button in the App Switcher. Kills all background apps with one press.
 Tag: compatible_min::appletvos26.0
