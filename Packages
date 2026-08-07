@@ -1,13 +1,13 @@
 Package: com.fauxly.atlas
-Version: 1.0.66-1
+Version: 1.0.68-1
 Architecture: appletvos-arm64
 Maintainer: Fauxly
 Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.atlas_1.0.66-1_appletvos-arm64.deb
-Size: 3303832
-MD5sum: 5f38d15b8392d65aa65be0397eb61299
-SHA1: e675a5d14ea8a78404f23de4e05a5cf76d56c780
-SHA256: 62139209ddb0b6df7047503e98a75d1a5c371971564a2a74aedee38c242b1505
+Filename: ./debs/com.fauxly.atlas_1.0.68-1_appletvos-arm64.deb
+Size: 3303912
+MD5sum: 2333f3c353139bc66850a2c533c82355
+SHA1: 06e2743a5cd417b38cf5f0339d1682619a4c893a
+SHA256: 1a48d16c9b65c1f4a492d32cebc5f4443b3c7ac581b639762823513afd1e8159
 Section: Utilities
 Homepage: https://apt.procurs.us
 Description: APT package manager for jailbroken Apple TV.
