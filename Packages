@@ -1,19 +1,3 @@
-Package: com.fauxly.atlas
-Version: 1.0.76-1
-Architecture: appletvos-arm64
-Maintainer: Fauxly
-Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.pyra_1.0.76-1_appletvos-arm64.deb
-Size: 1267456
-MD5sum: a5c8af7d7fba6f0fcd48229f9f0ed017
-SHA1: b90b9f3b7ff00ff857c000b46daeddb8c5f3fc29
-SHA256: 998159e1111ce7f2e6c224925683dea626e03841a04825f81a5bcd3f0bcd18d7
-Section: Utilities
-Homepage: https://apt.procurs.us
-Description: APT package manager for jailbroken Apple TV.
-Author: Fauxly
-Name: Atlas
-
 Package: com.fauxly.closeall
 Version: 1.0.1-1+debug
 Architecture: appletvos-arm64
@@ -30,6 +14,22 @@ Description: Liquid Glass-style "Close All" button in the App Switcher. Kills al
 Tag: compatible_min::appletvos26.0
 Author: Fauxly
 Name: CloseAllApps
+
+Package: com.fauxly.pyra
+Version: 1.0.76-1
+Architecture: appletvos-arm64
+Maintainer: Fauxly
+Depends: firmware (>= 15.0)
+Filename: ./debs/com.fauxly.pyra_1.0.76-1_appletvos-arm64.deb
+Size: 1267480
+MD5sum: 887d600137f4fd340f5b8879ee7a93de
+SHA1: b3a9e588a2b12cca649c6ab5df5b21aaeedf8a74
+SHA256: 96e409c4c0b304906114db763c726b01912e4f5600788fe74db3c63bd28fc942
+Section: Utilities
+Homepage: https://apt.procurs.us
+Description: APT package manager for jailbroken Apple TV.
+Author: Fauxly
+Name: Pyra
 
 Package: com.fauxly.terminaltv
 Version: 1.0.1
