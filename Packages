@@ -16,15 +16,15 @@ Author: Fauxly
 Name: CloseAllApps
 
 Package: com.fauxly.pyra
-Version: 1.0.76-1
+Version: 1.0.77-1
 Architecture: appletvos-arm64
 Maintainer: Fauxly
 Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.pyra_1.0.76-1_appletvos-arm64.deb
-Size: 1267480
-MD5sum: 887d600137f4fd340f5b8879ee7a93de
-SHA1: b3a9e588a2b12cca649c6ab5df5b21aaeedf8a74
-SHA256: 96e409c4c0b304906114db763c726b01912e4f5600788fe74db3c63bd28fc942
+Filename: ./debs/com.fauxly.pyra_1.0.77-1_appletvos-arm64.deb
+Size: 1268112
+MD5sum: 9911b3ecbf5496ce945cad46279f3efe
+SHA1: b110297e2aa4cf8bb02d6000e1670f4bd27079e0
+SHA256: 3d399bca0eb749f4c79abc361c9ad5a5b2a4dbcfd140f041ff40939a4dccb1e2
 Section: Utilities
 Homepage: https://apt.procurs.us
 Description: APT package manager for jailbroken Apple TV.
