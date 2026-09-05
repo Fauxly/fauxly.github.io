@@ -15,12 +15,30 @@ Tag: compatible_min::appletvos26.0
 Author: Fauxly
 Name: CloseAllApps
 
+Package: com.fauxly.closeall
+Version: 1.0.1-5+debug
+Architecture: appletvos-arm64
+Maintainer: Fauxly
+Installed-Size: 80
+Depends: mobilesubstrate
+Filename: ./debs/com.fauxly.closeall_1.0.1-5+debug_appletvos-arm64-rootless.deb
+Size: 8572
+MD5sum: 21cefefda4985cf945e69da87b07322f
+SHA1: 2d23f7254602a08c2e15a490a7c3c2e36505d7e3
+SHA256: ec833ef8bba0e3b6fd5b80b5e261c9fee676b5db7fccc54d61ad7f988038e2e1
+Section: Tweaks
+Description: Liquid Glass-style "Close All" button in the App Switcher. Kills all background apps with one press.
+Tag: compatible_min::appletvos26.0
+Author: Fauxly
+Name: CloseAllApps
+
 Package: com.fauxly.pyra
 Version: 1.0.77-1
 Architecture: appletvos-arm64
 Maintainer: Fauxly
 Depends: firmware (>= 15.0)
 Filename: ./debs/com.fauxly.pyra_1.0.77-1_appletvos-arm64.deb
+Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
 Size: 1268112
 MD5sum: 9911b3ecbf5496ce945cad46279f3efe
 SHA1: b110297e2aa4cf8bb02d6000e1670f4bd27079e0
@@ -59,6 +77,23 @@ Section: Application
 Description: Browser for tvOS
 Author: fauxly
 Name: tvOS Browser Pro
+
+Package: com.sysmonitor.tv
+Version: 1.0.0
+Architecture: appletvos-arm64
+Maintainer: SysMonitorTV
+Installed-Size: 96
+Depends: mobilesubstrate, firmware (>= 16.0)
+Filename: ./debs/com.sysmonitor.tv_1.0.0_appletvos-arm64-rootless.deb
+Size: 14444
+MD5sum: a968777a1b0802e9515a0312f73c1ee6
+SHA1: b2b52b2dabe88fad42b3a574cc7ce6fd647c8314
+SHA256: f03aef9ccecd288a2b0e7107e01d1c82de4e2ab8afe36470c6dc1a1dc8cec582
+Section: Tweaks
+Description: System monitor overlay for Apple TV. Shows CPU, RAM, thermal state, uptime and per-core load in real time on top of any app.
+Tag: purpose::extension
+Author: SysMonitorTV
+Name: SysMonitorTV
 
 Package: com.whitetailani.Spartan
 Version: 1.0.0-RC7-nightly-20240113105525
