@@ -49,6 +49,24 @@ Description: APT package manager for jailbroken Apple TV.
 Author: Fauxly
 Name: Pyra
 
+Package: com.fauxly.pyra
+Version: 1.0.78-1
+Architecture: iphoneos-arm64
+Maintainer: Fauxly
+Depends: firmware (>= 15.0)
+Filename: ./debs/com.fauxly.pyra_1.0.78-1_iphoneos-arm64.deb
+Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
+Size: 1267524
+MD5sum: 9ae26e4699946afec0fbc9a8d5b20571
+SHA1: 9f5ba8cc3567e1b03eacde4f134062e2af11dada
+SHA256: 6d7cd5529d8e7ee88363ac235742f1931e234e9afe8e31e52481cdf8b2c672e9
+Section: Utilities
+Homepage: https://github.com/Fauxly/Pyra
+Description: APT package manager for jailbroken Apple TV.
+Author: Fauxly
+Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
+Name: Pyra
+
 Package: com.fauxly.terminaltv
 Version: 1.0.1
 Architecture: appletvos-arm64
