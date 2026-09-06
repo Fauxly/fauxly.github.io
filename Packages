@@ -32,21 +32,6 @@ Author: Fauxly
 Name: CloseAllApps
 
 Package: com.fauxly.pyra
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Maintainer: Fauxly
-Filename: ./debs/com.fauxly.pyra_rootless_appletvos-arm64.deb
-Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
-Size: 1275116
-MD5sum: ae217c2f2b8f488329015917f730de86
-SHA1: 65bcf0028615b705312e6d4424ec70909ac0ce5c
-SHA256: 331788a2c3b67e69e0810da2b27c1da8bd0ece9cf20702d84b1b4e9a1b6ff92a
-Section: Packaging
-Priority: optional
-Description: Native package manager for jailbroken Apple TV (rootless)
-Name: Pyra
-
-Package: com.fauxly.pyra
 Version: 1.0.77-1
 Architecture: appletvos-arm64
 Maintainer: Fauxly
@@ -64,21 +49,18 @@ Author: Fauxly
 Name: Pyra
 
 Package: com.fauxly.pyra
-Version: 1.0.78-1
+Version: 1.0.80-1
 Architecture: iphoneos-arm64
 Maintainer: Fauxly
-Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.pyra_1.0.78-1_iphoneos-arm64.deb
+Filename: ./debs/com.fauxly.pyra_1.0.80-1_rootless_appletvos-arm64.deb
 Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
-Size: 1267524
-MD5sum: 9ae26e4699946afec0fbc9a8d5b20571
-SHA1: 9f5ba8cc3567e1b03eacde4f134062e2af11dada
-SHA256: 6d7cd5529d8e7ee88363ac235742f1931e234e9afe8e31e52481cdf8b2c672e9
-Section: Utilities
-Homepage: https://github.com/Fauxly/Pyra
-Description: APT package manager for jailbroken Apple TV.
-Author: Fauxly
-Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
+Size: 1275228
+MD5sum: 19d8e0ee91fa631d651bde9187c54e2d
+SHA1: 7985d5a207ba79cd3dd7eab09a63142732293b0b
+SHA256: 18478fd2ea03f22f905d1664685684844f8cd53a63a4306620252320969153a5
+Section: Packaging
+Priority: optional
+Description: Native package manager for jailbroken Apple TV (rootless)
 Name: Pyra
 
 Package: com.fauxly.terminaltv
