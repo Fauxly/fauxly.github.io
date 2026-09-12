@@ -64,20 +64,35 @@ Description: Native package manager for jailbroken Apple TV (rootless)
 Name: Pyra
 
 Package: com.fauxly.rootbrowser
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm64
 Maintainer: Fauxly
-Installed-Size: 1116
+Installed-Size: 1208
 Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.rootbrowser_1.0.0_iphoneos-arm64.deb
-Size: 214864
-MD5sum: 27db2d5d54c24c11079d278eb50b2167
-SHA1: f738a17f6631f0ddc6e9b34e303d268fe33cdf32
-SHA256: 957f285d49893d566c70969378f1da04bb989e422d300c6690c2d44cd874b372
+Filename: ./debs/com.fauxly.rootbrowser_1.0.1_iphoneos-arm64.deb
+Size: 277800
+MD5sum: 57df4f015d6c3c79a94855aa81dcb14a
+SHA1: 43a7320d5d85827197e80193c3dc09e36986561e
+SHA256: c9d7851d086aa7a9a3255130ee0adbcdb9d54c3092ba3266615d4586b553b4de
 Section: Utilities
 Description: File manager for jailbroken Apple TV
 Author: Fauxly
 Name: RootBrowser
+
+Package: com.fauxly.sleepkiller
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Fauxly
+Depends: firmware (>= 15.0)
+Filename: ./debs/com.fauxly.sleepkiller_1.0.0_iphoneos-arm64.deb
+Size: 4560
+MD5sum: 1313cddb1c1690ae3f1b292aea77f702
+SHA1: f45e383c7a8286be35a0fcfd6b68d939680652b0
+SHA256: 2a9f13eacd7115f3c6ac3fdbe3d5d6323d44b8ef6bb5cc9193fdbf95bf8e6a0d
+Section: Tweaks
+Description: Kills all user processes when Apple TV goes to sleep to reduce idle power and heat.
+Author: Fauxly
+Name: SleepKiller
 
 Package: com.fauxly.terminaltv
 Version: 1.0.1
