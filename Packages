@@ -65,15 +65,15 @@ Name: Pyra
 
 Package: com.fauxly.rootbrowsertv
 Version: 1.0.0
-Architecture: appletvos-arm64
+Architecture: iphoneos-arm64
 Maintainer: Fauxly
 Installed-Size: 1060
 Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.rootbrowsertv_1.0.0_appletvos-arm64.deb
-Size: 196660
-MD5sum: 3dceeb19254cb402bdc08bb88601e878
-SHA1: c1b67fe2b67ab0ddd3d762786aa0261eb6856a99
-SHA256: e79d0db116bf9cab80caf1b6ffe95a5a494ffa5df7e232e849e8cdc7d89ff843
+Filename: ./debs/com.fauxly.rootbrowsertv_1.0.0_iphoneos-arm64.deb
+Size: 196420
+MD5sum: bce1171df6cde93824ea89ea092c6d34
+SHA1: d1ff6549ebd1558fabd91e8a73c01dc4f7a9ed15
+SHA256: f18ac5c53bd240da3f718124c58a3c4b7b648e94c8481b371fc2068e53aa838b
 Section: Utilities
 Description: File manager for jailbroken Apple TV
 Author: Fauxly
