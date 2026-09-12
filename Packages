@@ -63,21 +63,21 @@ Priority: optional
 Description: Native package manager for jailbroken Apple TV (rootless)
 Name: Pyra
 
-Package: com.fauxly.rootbrowsertv
+Package: com.fauxly.rootbrowser
 Version: 1.0.0
 Architecture: iphoneos-arm64
 Maintainer: Fauxly
-Installed-Size: 1060
+Installed-Size: 1116
 Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.rootbrowsertv_1.0.0_iphoneos-arm64.deb
-Size: 196420
-MD5sum: bce1171df6cde93824ea89ea092c6d34
-SHA1: d1ff6549ebd1558fabd91e8a73c01dc4f7a9ed15
-SHA256: f18ac5c53bd240da3f718124c58a3c4b7b648e94c8481b371fc2068e53aa838b
+Filename: ./debs/com.fauxly.rootbrowser_1.0.0_iphoneos-arm64.deb
+Size: 214864
+MD5sum: 27db2d5d54c24c11079d278eb50b2167
+SHA1: f738a17f6631f0ddc6e9b34e303d268fe33cdf32
+SHA256: 957f285d49893d566c70969378f1da04bb989e422d300c6690c2d44cd874b372
 Section: Utilities
 Description: File manager for jailbroken Apple TV
 Author: Fauxly
-Name: RootBrowserTV
+Name: RootBrowser
 
 Package: com.fauxly.terminaltv
 Version: 1.0.1
