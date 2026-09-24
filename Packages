@@ -79,20 +79,19 @@ Description: File manager for jailbroken Apple TV
 Author: Fauxly
 Name: RootBrowser
 
-Package: com.fauxly.sleepkiller
+Package: com.fauxly.sleeppowersaver
 Version: 1.0.0
 Architecture: iphoneos-arm64
 Maintainer: Fauxly
-Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.sleepkiller_1.0.0_iphoneos-arm64.deb
-Size: 4560
-MD5sum: 1313cddb1c1690ae3f1b292aea77f702
-SHA1: f45e383c7a8286be35a0fcfd6b68d939680652b0
-SHA256: 2a9f13eacd7115f3c6ac3fdbe3d5d6323d44b8ef6bb5cc9193fdbf95bf8e6a0d
+Filename: ./debs/sleeppowersaver_1.0.0_rootless_appletvos.deb
+Size: 11792
+MD5sum: cc2eb5c4307336787896f1b7a885cdc9
+SHA1: 07231ae427a4a44a8ca722d64bbe78fc022c7fc9
+SHA256: 56fafa544a5f66420bde41ab0fc8dec31e7514be9ae026e3f41b9db513b1630a
 Section: Tweaks
-Description: Kills all user processes when Apple TV goes to sleep to reduce idle power and heat.
-Author: Fauxly
-Name: SleepKiller
+Priority: optional
+Description: Inactivity-based power management for jailbroken Apple TV. Detects idle state, stops ~100 background services, restores on wake.
+Name: Sleep Power Saver
 
 Package: com.fauxly.terminaltv
 Version: 1.0.1
