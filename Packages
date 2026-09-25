@@ -79,6 +79,22 @@ Description: File manager for jailbroken Apple TV
 Author: Fauxly
 Name: RootBrowser
 
+Package: com.fauxly.rootbrowser
+Version: 1.0.2
+Architecture: appletvos-arm64
+Maintainer: Fauxly
+Installed-Size: 1252
+Depends: firmware (>= 15.0)
+Filename: ./debs/com.fauxly.rootbrowser_1.0.2_appletvos-arm64.deb
+Size: 283568
+MD5sum: 34023ac906f3f9bef6eadb761510ae59
+SHA1: c8477af0b3bf4c1b74a31599a34bf352360a7d02
+SHA256: e3c42d1d50f70e97144e2c53dc05702b05216d1e49c6b9f2b813ad26ae8b6954
+Section: Utilities
+Description: File manager for jailbroken Apple TV
+Author: Fauxly
+Name: RootBrowser
+
 Package: com.fauxly.sleeppowersaver
 Version: 1.0.0
 Architecture: iphoneos-arm64
