@@ -171,6 +171,22 @@ Tag: purpose::extension
 Author: Fauxly
 Name: SysMonitorTV
 
+Package: com.sysmonitor.tv
+Version: 1.0.5
+Architecture: iphoneos-arm64
+Maintainer: Fauxly
+Installed-Size: 212
+Filename: ./debs/com.sysmonitor.tv_1.0.5_iphoneos-arm64.deb
+Size: 21412
+MD5sum: f30f68811c1b2740968e9c53d0ab3022
+SHA1: a900d149a695eddb3d7eea9b4f12f994b31fedde
+SHA256: c6e66cd60ad2456334aa3229b4e916f93d3f420245c18913dde1378b9259067b
+Section: Tweaks
+Description: System monitor overlay for Apple TV. Shows CPU, RAM, thermal state, uptime and per-core load in real time on top of any app.
+Tag: purpose::extension
+Author: Fauxly
+Name: SysMonitorTV
+
 Package: com.whitetailani.Spartan
 Version: 1.0.0-RC7-nightly-20240113105525
 Architecture: appletvos-arm64
