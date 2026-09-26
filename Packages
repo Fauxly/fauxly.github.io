@@ -5,10 +5,10 @@ Maintainer: Kevin Bradley
 Installed-Size: 272
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 1.5-15)
 Filename: ./debs/applist_1.3-11_iphoneos-arm64.deb
-Size: 89604
-MD5sum: a861b112e66f15022260dd94f3b2dc50
-SHA1: fd12f1fb2bbf95b475f1143682e4727d10867155
-SHA256: 43d32766c6667de3aecf1088f2fd28c2d8637c34de8fb60901b11923f54bf0b9
+Size: 99132
+MD5sum: b1cfcbdec8cd1e378ebc59035ba8b500
+SHA1: 103b016dbf80bda98011457579d6b97eb9704a01
+SHA256: 0b6256ea260d2d7e467f090ec861f0205b3ef850c2f43a7afe00130881d74b1e
 Section: System
 Description: Allow extensions to read the list of installed apps, for tvOS!
 Tag: role::developer
@@ -22,10 +22,10 @@ Maintainer: Nick Chan <towinchenmi@gmail.com>
 Installed-Size: 56
 Depends: ldid (>= 2.1.5-procursus7), mobilesubstrate, firmware (>= 12.0)
 Filename: ./debs/autosign_2.0.3_iphoneos-arm64.deb
-Size: 3584
-MD5sum: 1c37724af3b5581fc21273d93ef2956d
-SHA1: 3a427dd25cd87d1e5295b30519ff4d3b78bffbcd
-SHA256: 5b613601513f6b0154b3bafe54255e77673db2075419abf7e2573d213d5180b2
+Size: 3960
+MD5sum: 732140635dfefd0f7306bf8c7bbd5acc
+SHA1: f46dfcc5bfa5ae1f05b8d8ffcf18c3e3468aa326
+SHA256: 54a9f5f5934907eadbc8a932a15f717fac9cfc596fc33c1dfe5c8594019aefff
 Section: Tweaks
 Description: Automatically resign installed packages
 
@@ -77,6 +77,22 @@ Description: Liquid Glass-style "Close All" button in the App Switcher. Kills al
 Tag: compatible_min::appletvos26.0
 Author: Fauxly
 Name: CloseAllApps
+
+Package: com.fauxly.pyra
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Fauxly
+Installed-Size: 2388
+Filename: ./debs/com.fauxly.pyra_1.0.0_iphoneos-arm64.deb
+Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
+Size: 1398216
+MD5sum: 7fbedb2288bf6a53572d46e6c9d80a64
+SHA1: cdfbbb8c2a8df8810d428d85e68799b8c78e1ee7
+SHA256: addd89be80e14d60d42e6a69eda428d2b8869b1c7b9e258e1b640cb188c967c2
+Section: Packaging
+Priority: optional
+Description: Native package manager for jailbroken Apple TV (rootless)
+Name: Pyra
 
 Package: com.fauxly.pyra
 Version: 1.0.77-1
@@ -192,10 +208,10 @@ Maintainer: Kevin Bradley
 Installed-Size: 80
 Depends: mobilesubstrate, preferenceloader (>=1.5-15), applist (>=1.3-11), libflex (>=4.3.0-6)
 Filename: ./debs/com.nito.flexinjected_1.5-3_iphoneos-arm64.deb
-Size: 6340
-MD5sum: b7f636ff82e65fdcf602bdaa808ceeb1
-SHA1: cd728bcc3e73869adc21175b3e8167fb92e5b1ab
-SHA256: c0ba315397147e6888924a8606b2cc5ea401f05a3df0b5d173ac605b9e9cdb96
+Size: 7142
+MD5sum: ed3f6a15bd84c3795aaa008871d4b3b2
+SHA1: 45d9cf32f01059ed0f3af0299c346031d5fc4a02
+SHA256: cd021492a6b26653bef4c620144cb8940bbba899e67be6ce06f9accaeb8f80de
 Section: Tweaks
 Description: Inject FLEX into your favorite Applications utilizing applist
 Author: Kevin Bradley
@@ -209,10 +225,10 @@ Maintainer: opa334
 Installed-Size: 960
 Depends: ldid
 Filename: ./debs/com.opa334.trollstorelite_2.1_iphoneos-arm64.deb
-Size: 534400
-MD5sum: 194cfbbed477b5ee6d26ff4a3c06d586
-SHA1: 7031508bb86477c056df172b18316c060e2fff14
-SHA256: 26e2be4647e88cc4c22cc3e73abdb19f7c8a4a384dcd7b95fcb4a1abeecade28
+Size: 583896
+MD5sum: f9cca947a7d1d4c633a1a0b94a841d9e
+SHA1: 7d0a1c1eae3656d638131a2e224f91efa3a6aee9
+SHA256: 763aa5652e82fed3629f81e7d04cde2637ac2fbd445f469b6be8bfa8ffecbf1a
 Section: Applications
 Description: TrollStore for jailbroken tvOS
 Author: opa334
@@ -304,10 +320,10 @@ Maintainer: Kevin Bradley
 Installed-Size: 3076
 Depends: firmware (>= 9.0), mobilesubstrate
 Filename: ./debs/libflex_4.5.0-5_iphoneos-arm64.deb
-Size: 600120
-MD5sum: 7b31d4ec40cecd70843f24af9f563a94
-SHA1: 55ca1a0bc3dd07c625dc1df1f47a38f8e9d24d07
-SHA256: c02bbd02a9ca42ee24e8f9a916875edeb16e9840946d2cf7fda23b4f49ede415
+Size: 833306
+MD5sum: ee997f07a2c64543596e885c4857d4e6
+SHA1: 7d5a9e0afe62ab20a13c631d1452da516f58ecfa
+SHA256: 4a92962da3ec54b6dc4766581fed72503276e3f2a79099518aaf7fb44c236870
 Section: Development
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libflexDp
 Description: A library for Flipboard Explorer on tvOS
@@ -323,10 +339,10 @@ Maintainer: Kevin Bradley
 Installed-Size: 192
 Depends: mobilesubstrate
 Filename: ./debs/preferenceloader_1.5-palera1n_iphoneos-arm64.deb
-Size: 23516
-MD5sum: 643b7e68a41709ffd9fce11af6575cca
-SHA1: f07d233b0ce6c628c3dc792e2a432d50e421aa6c
-SHA256: 3ce46ef100f52776a56bc7439a6d4df49661caddaf730cbd71e1cbe91d488be0
+Size: 30026
+MD5sum: e05d621a07f30338f6273f08cfdde9b3
+SHA1: feac593ca0b7f9aee1cba0c93381a981ba28db19
+SHA256: a8f8ca0223615865b92f8fe8196b3722395545cda4c9ba24bf66a56dd19233f6
 Section: System
 Description: load preferences in style, based on Dustin Howett's iOS version, now properly split into a lib & tweak
 Author: Kevin Bradley & Sam Bingner
@@ -338,10 +354,10 @@ Architecture: iphoneos-arm64
 Maintainer: Nick Chan <towinchenmi@gmail.com>
 Installed-Size: 1308
 Filename: ./debs/trollstore-installer_2.1_iphoneos-arm64.deb
-Size: 1177380
-MD5sum: 47a6d8b97fe70660728da0cddec1f491
-SHA1: 3dd8fb61f47ac526e4f59d1d747ec5edc5a50304
-SHA256: aef3deba881a4689c4141faeb593f11654f40d7a57604400d3718c1122cefc15
+Size: 1188598
+MD5sum: 347e3773469175c3f3ba5568bcdecf8b
+SHA1: 1eeed92b43ce45cfbaf18d287e699ce0be578446
+SHA256: f5521c37e8d4af6c75a60fc34f5305dd020bc82735a9ee5edba8a53b1a700e3f
 Section: Applications
 Description: Installer for TrollStore
  Removing this package will remove TrollStore only.
