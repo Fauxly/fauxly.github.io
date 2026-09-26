@@ -62,6 +62,22 @@ Tag: compatible_min::appletvos26.0
 Author: Fauxly
 Name: CloseAllApps
 
+Package: com.fauxly.closeall
+Version: 1.0.7-1+debug
+Architecture: iphoneos-arm64
+Maintainer: Fauxly
+Installed-Size: 180
+Filename: ./debs/com.fauxly.closeall_1.0.7-1+debug_iphoneos-arm64.deb
+Size: 12710
+MD5sum: 7b71c1142b082dbdf2251c7f86d2f586
+SHA1: 3917989b312b77c298c20632fc028d79bb4b319b
+SHA256: 0cfef4a27bdd20ddeb0261ef126aec1b490c003a8a8ba77133154cd596ba388b
+Section: Tweaks
+Description: Liquid Glass-style "Close All" button in the App Switcher. Kills all background apps with one press and auto-returns to Home Screen.
+Tag: compatible_min::appletvos26.0
+Author: Fauxly
+Name: CloseAllApps
+
 Package: com.fauxly.pyra
 Version: 1.0.77-1
 Architecture: appletvos-arm64
