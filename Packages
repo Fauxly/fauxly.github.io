@@ -126,6 +126,36 @@ Priority: optional
 Description: Native package manager for jailbroken Apple TV (rootless)
 Name: Pyra
 
+Package: com.fauxly.pyra
+Version: 1.0.85-1
+Architecture: iphoneos-arm64
+Maintainer: Fauxly
+Filename: ./debs/com.fauxly.pyra_1.0.85-1_iphoneos-arm64.deb
+Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
+Size: 2089744
+MD5sum: e07d3a39df81187564b92538eb30cd60
+SHA1: 8d838d3d669efe6e957530709ab19178dc99e86b
+SHA256: 8a77326ae0ef957714d2d2afcac8c4ae9dee5d2ccfecf7f77fb23babca65ea5a
+Section: Packaging
+Description: Native package manager for jailbroken Apple TV
+Author: Fauxly
+Name: Pyra
+
+Package: com.fauxly.pyra
+Version: 1.0.85-1
+Architecture: appletvos-arm64
+Maintainer: Fauxly
+Filename: ./debs/com.fauxly.pyra_1.0.85-1_appletvos-arm64.deb
+Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
+Size: 2089948
+MD5sum: c178812efd620887dfbb842ea70ba050
+SHA1: d5c234c6bb684a7b38e4f7f1706caa2b61ce0129
+SHA256: 4408508c84e7a5581f1ce413b7808249853618d0524997b3bec1c305700041e8
+Section: Packaging
+Description: Native package manager for jailbroken Apple TV
+Author: Fauxly
+Name: Pyra
+
 Package: com.fauxly.rootbrowser
 Version: 1.0.1
 Architecture: iphoneos-arm64
