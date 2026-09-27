@@ -132,10 +132,10 @@ Architecture: iphoneos-arm64
 Maintainer: Fauxly
 Filename: ./debs/com.fauxly.pyra_1.0.85-1_iphoneos-arm64.deb
 Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
-Size: 2089744
-MD5sum: e07d3a39df81187564b92538eb30cd60
-SHA1: 8d838d3d669efe6e957530709ab19178dc99e86b
-SHA256: 8a77326ae0ef957714d2d2afcac8c4ae9dee5d2ccfecf7f77fb23babca65ea5a
+Size: 2091564
+MD5sum: 36a70748a91faa6680146196667d9607
+SHA1: eafd31d2aefa06091f0be01ff2363faeab2351e0
+SHA256: c3c99e5a9b47ca2c8e54417f1b19126e5823c714f605279b451a1ec05ee58aaf
 Section: Packaging
 Description: Native package manager for jailbroken Apple TV
 Author: Fauxly
@@ -147,10 +147,10 @@ Architecture: appletvos-arm64
 Maintainer: Fauxly
 Filename: ./debs/com.fauxly.pyra_1.0.85-1_appletvos-arm64.deb
 Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
-Size: 2089948
-MD5sum: c178812efd620887dfbb842ea70ba050
-SHA1: d5c234c6bb684a7b38e4f7f1706caa2b61ce0129
-SHA256: 4408508c84e7a5581f1ce413b7808249853618d0524997b3bec1c305700041e8
+Size: 2091128
+MD5sum: 618853036308edc1eaccbda0ff01f0d8
+SHA1: a2c1eaa374cf6a9850b6d86dc4bcd4d810a73aed
+SHA256: 3283e64211799ec669a9d2e8bb36030e356fa0df8e6b5ddfb76c9b345602a838
 Section: Packaging
 Description: Native package manager for jailbroken Apple TV
 Author: Fauxly
