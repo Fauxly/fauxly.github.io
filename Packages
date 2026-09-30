@@ -156,6 +156,24 @@ Description: Native package manager for jailbroken Apple TV
 Author: Fauxly
 Name: Pyra
 
+Package: com.fauxly.revc
+Version: 1.0.5158
+Architecture: iphoneos-arm64
+Maintainer: Fix's Tricks
+Installed-Size: 22204
+Depends: firmware (>= 15.0)
+Filename: ./debs/reVC-tvos-rootless_1.0.5158.deb
+Size: 5167980
+MD5sum: 089b2760dfa6319142b002c645d5be71
+SHA1: 54d6fa76647c0a21d2c6273df9578871a7663a48
+SHA256: 488bd4b80d73be698d90395633715883b3c8bc38b5b432e185bd1e0fd28f7e26
+Section: Games
+Description: Reverse-engineered GTA Vice City engine (reVC) for Apple TV.
+ Requires your own copy of GTA Vice City (PC): copy its files to
+ /var/mobile/Documents/reVC. Needs an MFi / Xbox / DualSense gamepad.
+Author: reVC team, tvOS port by Fix's Tricks
+Name: reVC (GTA Vice City engine)
+
 Package: com.fauxly.rootbrowser
 Version: 1.0.1
 Architecture: iphoneos-arm64
