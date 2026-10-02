@@ -157,16 +157,16 @@ Author: Fauxly
 Name: Pyra
 
 Package: com.fauxly.revc
-Version: 1.0.5220
+Version: 1.0.5160
 Architecture: iphoneos-arm64
 Maintainer: Fix's Tricks
 Installed-Size: 32364
 Depends: firmware (>= 15.0)
-Filename: ./debs/reVC-tvos-rootless_1.0.5220.deb
-Size: 7146132
-MD5sum: 5511283020b1911c13d172bb2998b4cb
-SHA1: d0c98e45bafbd30c259398952e27a01f88d6690e
-SHA256: afb5d1805d42034d0db6b67b9fdd8d61a04b0df4d32e00e847cb4fbcf8dc04ed
+Filename: ./debs/reVC-tvos-rootless_1.0.5160.deb
+Size: 7146840
+MD5sum: 9ce29e0c40ce10e51bc3f235a14f5058
+SHA1: b6fcd011948e08d6b31282a6ac1f330568ac7bce
+SHA256: e1b42391463639b77c4bf5ee750d037c216f2afc8df931ee46b73eb7780bbd61
 Section: Games
 Description: Reverse-engineered GTA Vice City engine (reVC) for Apple TV.
  Requires your own copy of GTA Vice City (PC): copy its files to
