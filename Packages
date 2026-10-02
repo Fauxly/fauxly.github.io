@@ -79,54 +79,6 @@ Author: Fauxly
 Name: CloseAllApps
 
 Package: com.fauxly.pyra
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Maintainer: Fauxly
-Installed-Size: 2388
-Filename: ./debs/com.fauxly.pyra_1.0.0_iphoneos-arm64.deb
-Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
-Size: 1398216
-MD5sum: 7fbedb2288bf6a53572d46e6c9d80a64
-SHA1: cdfbbb8c2a8df8810d428d85e68799b8c78e1ee7
-SHA256: addd89be80e14d60d42e6a69eda428d2b8869b1c7b9e258e1b640cb188c967c2
-Section: Packaging
-Priority: optional
-Description: Native package manager for jailbroken Apple TV (rootless)
-Name: Pyra
-
-Package: com.fauxly.pyra
-Version: 1.0.77-1
-Architecture: appletvos-arm64
-Maintainer: Fauxly
-Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.pyra_1.0.77-1_appletvos-arm64.deb
-Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
-Size: 1268112
-MD5sum: 9911b3ecbf5496ce945cad46279f3efe
-SHA1: b110297e2aa4cf8bb02d6000e1670f4bd27079e0
-SHA256: 3d399bca0eb749f4c79abc361c9ad5a5b2a4dbcfd140f041ff40939a4dccb1e2
-Section: Utilities
-Homepage: https://apt.procurs.us
-Description: APT package manager for jailbroken Apple TV.
-Author: Fauxly
-Name: Pyra
-
-Package: com.fauxly.pyra
-Version: 1.0.82-1
-Architecture: iphoneos-arm64
-Maintainer: Fauxly
-Filename: ./debs/com.fauxly.pyra_1.0.82-1_rootless_appletvos-arm64.deb
-Icon: https://fauxly.github.io/icons/com.fauxly.pyra.png
-Size: 1948980
-MD5sum: 1cc8d3b5f560a95e7d755fd68cba9008
-SHA1: f333db4293bdfd3b04dfcae32b1cb64a722276eb
-SHA256: 239f98ded630e339f643ee1efac93dd8649674f9807c901ffbefc23af709a7cc
-Section: Packaging
-Priority: optional
-Description: Native package manager for jailbroken Apple TV (rootless)
-Name: Pyra
-
-Package: com.fauxly.pyra
 Version: 1.0.85-1
 Architecture: iphoneos-arm64
 Maintainer: Fauxly
@@ -159,36 +111,20 @@ Name: Pyra
 Package: com.fauxly.revc
 Version: 1.0.5160
 Architecture: iphoneos-arm64
-Maintainer: Fix's Tricks
+Maintainer: Fauxly
 Installed-Size: 32364
 Depends: firmware (>= 15.0)
 Filename: ./debs/reVC-tvos-rootless_1.0.5160.deb
-Size: 7146840
-MD5sum: 9ce29e0c40ce10e51bc3f235a14f5058
-SHA1: b6fcd011948e08d6b31282a6ac1f330568ac7bce
-SHA256: e1b42391463639b77c4bf5ee750d037c216f2afc8df931ee46b73eb7780bbd61
+Size: 7146812
+MD5sum: 45216bf8425356e1d964721956de2f95
+SHA1: 28d2aeb650a15818f9711a9744c06b3347e8bae5
+SHA256: 7ac979fded6fb6987a3d3dcc34df3318f00aafe3e6cbab7b2c7be595e676d887
 Section: Games
 Description: Reverse-engineered GTA Vice City engine (reVC) for Apple TV.
  Requires your own copy of GTA Vice City (PC): copy its files to
  /var/mobile/Documents/reVC. Needs an MFi / Xbox / DualSense gamepad.
-Author: reVC team, tvOS port by Fix's Tricks
+Author: reVC team, tvOS port by Fauxly
 Name: reVC (GTA Vice City engine)
-
-Package: com.fauxly.rootbrowser
-Version: 1.0.1
-Architecture: iphoneos-arm64
-Maintainer: Fauxly
-Installed-Size: 1208
-Depends: firmware (>= 15.0)
-Filename: ./debs/com.fauxly.rootbrowser_1.0.1_iphoneos-arm64.deb
-Size: 277800
-MD5sum: 57df4f015d6c3c79a94855aa81dcb14a
-SHA1: 43a7320d5d85827197e80193c3dc09e36986561e
-SHA256: c9d7851d086aa7a9a3255130ee0adbcdb9d54c3092ba3266615d4586b553b4de
-Section: Utilities
-Description: File manager for jailbroken Apple TV
-Author: Fauxly
-Name: RootBrowser
 
 Package: com.fauxly.rootbrowser
 Version: 1.0.2
@@ -201,6 +137,21 @@ Size: 283564
 MD5sum: db17191c4c17c73cf2fc43cfd14ce0d1
 SHA1: 59224200fc08018543afac38320b62a9a8902eeb
 SHA256: 94de66cd37e2c72879199f52ff00ca648f3d0dd45ddb816797292ec995f75b92
+Section: Utilities
+Description: File manager for jailbroken Apple TV
+Author: Fauxly
+Name: RootBrowser
+
+Package: com.fauxly.rootbrowser
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Maintainer: Fauxly
+Installed-Size: 1280
+Filename: ./debs/com.fauxly.rootbrowser_1.0.3_iphoneos-arm64.deb
+Size: 291360
+MD5sum: 018b8b026d282d1514c18856e5a6b4e6
+SHA1: 311564a0e2289842f782fd01236fcfd749635daa
+SHA256: c889069b48a4bd508d0de9568e5240ddea7b8c46c6e712b3d94a3105073608db
 Section: Utilities
 Description: File manager for jailbroken Apple TV
 Author: Fauxly
